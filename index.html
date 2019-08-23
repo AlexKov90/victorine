@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+        <!-- <button id="randing" onclick="random()">Узнать судьбу</button> -->
+    <div id="container">
+        
+        <div id="ansver1" class="quest">
+                <h3>Questio #1 JS - однопоточный или многопоточный?</h3>
+            <p>1</p>
+            <input name="ansver" type="radio" id="QuestOneAnsw1" value="15" >
+            <p>2</p>
+            <input type="radio" name="ansver" id="QuestTwoAnsw2" value="0">
+            <button onclick="next()">Next question</button>
+        </div>
+        
+        <div id="ansver2" class="quest">
+                <h3>Questio #2 Какой стандарт самый новый</h3>
+            <p>ES5</p>
+            <input type="radio" name="ansver2" value="1">
+            <p>ES6</p>
+            <input type="radio" name="ansver2" value="11">
+        </div>
+        
+        <div id="ansver3" class="quest">
+                <h3>Questio #3 что разрабатывают в первую очеред?</h3>
+            <p>Mobile first</p>
+            <input type="radio" name="ansver3" value="12">
+            <p>PC first</p>
+            <input type="radio" name="ansver3" value="2">
+        </div>
+        
+        <div id="ansver4" class="quest">
+                <h3>Questio #4 Что такое HTML?</h3>
+            <p>Язык разметки</p>
+            <input type="radio" name="ansver4" value="13">
+            <p>Какая-то древня штука</p>
+            <input type="radio" name="ansver4" value="3">
+        </div>
+        
+        <div id="ansver5" class="quest">
+                <h3>Questio #5 Что такое CSS</h3>
+            <p> Язык для стилей</p>
+            <input type="radio" name="ansver5" value="14">
+            <p>английские буквы =)</p>
+            <input type="radio" name="ansver5" value="4">
+        </div>
+
+
+        <input type="submit" value="results" onclick="result()"> 
+    </div>
+
+
+    <button type="button" onClick="window.location.reload();">Try again!</button>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
